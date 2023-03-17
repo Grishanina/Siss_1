@@ -134,10 +134,47 @@ namespace Siss
 
             foreach (Product prd in TP)
             {
-                pr += Convert.ToDouble(prd.ProductCost - ((prd.ProductDiscountAmount * prd.ProductCost) / 100));
-            }
+                if(prd.ProductDiscountAmount!=0)
+                {
+                   pr += Convert.ToDouble(prd.ProductCost - ((prd.ProductDiscountAmount * prd.ProductCost) / 100));
+                   tb.Text = "Цена " + pr.ToString() + " руб.";
+                }
+                else
+                {
+                    tb.Text = "";
+                }
+                
+            }   
+        }
 
-            tb.Text = "Цена " + pr.ToString() + " руб.";
+        private void cost_dis_Loaded(object sender, RoutedEventArgs e)
+        {
+            TextBlock tb = (TextBlock)sender;
+            int index = Convert.ToInt32(tb.Uid);
+
+            List<Product> TP = ClassBase.BD.Product.Where(x => x.ID_Product == index).ToList();
+
+            double pr = 0;
+
+            foreach (Product prd in TP)
+            {
+                if(prd.ProductDiscountAmount != 0)
+                {
+                    pr += Convert.ToDouble(prd.ProductCost);
+                    tb.Text = "Цена " + pr.ToString() + " руб.";
+                    tb.TextDecorations = TextDecorations.Strikethrough;
+                }
+                else
+                {
+                    pr += Convert.ToDouble(prd.ProductCost);
+                    tb.Text = "Цена " + pr.ToString() + " руб.";
+                    
+                }
+                
+            }
+            
+
+            
         }
     }
 }

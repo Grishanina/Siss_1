@@ -57,7 +57,7 @@
                                         <TextBlock Text="{Binding ProductName, StringFormat=Название: {0}}" FontSize="14" FontWeight="DemiBold"/>
                                         <TextBlock Text="{Binding ProductDescription, StringFormat=Описание: {0}}" FontSize="14" TextWrapping="Wrap"/>
                                         <TextBlock Text="{Binding Supplier.Supplier1, StringFormat=Производитель: {0}}" FontSize="14"/>
-                                        <TextBlock Text="{Binding ProductCost, StringFormat=Цена: {0}}" TextDecorations="Strikethrough" FontSize="14"/>
+                                        <TextBlock x:Name="cost_dis" Uid="{Binding ID_Product}" FontSize="14" Loaded="cost_dis_Loaded"/>
                                         <TextBlock x:Name="cost" Uid="{Binding ID_Product}" FontSize="14" Loaded="cost_Loaded"/>
 
                                     <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
