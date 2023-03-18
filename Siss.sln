@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siss", "Siss\Siss.csproj", "{A79272A2-4A85-4E23-A099-4A3DD6EAF069}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SF2022User{NN}Lib", "SF2022User{NN}Lib\SF2022User{NN}Lib.csproj", "{CA075530-76F7-49A7-9EDD-E72468A1084F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A79272A2-4A85-4E23-A099-4A3DD6EAF069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A79272A2-4A85-4E23-A099-4A3DD6EAF069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A79272A2-4A85-4E23-A099-4A3DD6EAF069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA075530-76F7-49A7-9EDD-E72468A1084F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA075530-76F7-49A7-9EDD-E72468A1084F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA075530-76F7-49A7-9EDD-E72468A1084F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA075530-76F7-49A7-9EDD-E72468A1084F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
